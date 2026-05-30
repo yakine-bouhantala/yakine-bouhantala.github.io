@@ -2,177 +2,204 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VClass - Virtual Classroom Multiplayer Experience</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>VClass - Multiplayer Virtual Classroom Game</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#050816;
-    color:white;
-    line-height:1.6;
+font-family:'Orbitron',sans-serif;
+background:#050510;
+color:white;
+overflow-x:hidden;
 }
 
 .hero{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px;
-    background:
-    radial-gradient(circle at top,#0d2b65,#050816 70%);
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+url('banner.jpg') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero-content{
+max-width:900px;
+padding:20px;
 }
 
 .logo{
-    font-size:5rem;
-    font-weight:bold;
-    letter-spacing:4px;
+width:180px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:6rem;
+letter-spacing:8px;
+text-shadow:
+0 0 10px #00c3ff,
+0 0 20px #00c3ff,
+0 0 40px #00c3ff;
 }
 
 .tagline{
-    max-width:700px;
-    margin-top:20px;
-    font-size:1.2rem;
-    color:#b7c5ff;
+font-size:1.5rem;
+margin-top:20px;
+line-height:1.8;
+color:#d0d8ff;
 }
 
 .button{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 35px;
-    background:#3b82f6;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
+display:inline-block;
+margin-top:35px;
+padding:18px 40px;
+background:#0088ff;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+box-shadow:0 0 25px #0088ff;
 }
 
 .section{
-    max-width:1100px;
-    margin:auto;
-    padding:80px 20px;
+padding:100px 10%;
 }
 
 .section h2{
-    margin-bottom:20px;
-    color:#7aa2ff;
+font-size:2.5rem;
+margin-bottom:30px;
+color:#00c3ff;
 }
 
-.card-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+.about{
+font-size:1.1rem;
+line-height:2;
+max-width:900px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,195,255,.4);
 }
 
 .card{
-    background:#0f172a;
-    padding:25px;
-    border-radius:12px;
+background:#0d1328;
+padding:30px;
+border-radius:15px;
+margin-top:20px;
 }
 
 .footer{
-    text-align:center;
-    padding:40px;
-    border-top:1px solid #222;
+padding:60px;
+text-align:center;
+border-top:1px solid #1f2c5c;
 }
 
-a{
-    color:#7aa2ff;
+.footer a{
+color:#00c3ff;
+text-decoration:none;
 }
+
 </style>
 </head>
 
 <body>
 
 <section class="hero">
-<h1 class="logo">VCLASS</h1>
+
+<div class="hero-content">
+
+<img src="logo.png" class="logo">
+
+<h1>VCLASS</h1>
 
 <p class="tagline">
-A multiplayer virtual classroom experience where players gather,
-chat, socialize, and participate in shared online activities
-inside a digital classroom environment.
+A Multiplayer Virtual Classroom Game where players gather,
+chat, socialize, and participate in shared digital experiences.
 </p>
 
-<a class="button" href="#about">Learn More</a>
+<a href="#about" class="button">ENTER VCLASS</a>
+
+</div>
+
 </section>
 
 <section class="section" id="about">
-<h2>About VClass</h2>
 
-<p>
-VClass is a social multiplayer application that allows users to
-join virtual classrooms and communicate with one another in real time.
-The application is designed to create collaborative online spaces
-for communication, interaction, and community engagement.
+<h2>About The Game</h2>
+
+<p class="about">
+
+VClass is a multiplayer social game set in a virtual classroom.
+Players can join shared environments, communicate in real time,
+build communities, participate in activities, and interact with
+others in immersive online spaces.
+
 </p>
+
 </section>
 
 <section class="section">
-<h2>Features</h2>
 
-<div class="card-grid">
+<h2>Screenshots</h2>
 
-<div class="card">
-<h3>Multiplayer Spaces</h3>
-<p>
-Join shared virtual classroom environments with other users.
-</p>
-</div>
-
-<div class="card">
-<h3>Real-Time Chat</h3>
-<p>
-Communicate with participants through integrated messaging features.
-</p>
-</div>
-
-<div class="card">
-<h3>Social Interaction</h3>
-<p>
-Meet new users and participate in collaborative activities.
-</p>
-</div>
+<div class="gallery">
 
 </div>
+
 </section>
 
 <section class="section">
-<h2>Publisher Information</h2>
 
-<p>
-Publisher: VClass
-</p>
+<h2>Game Information</h2>
 
-<p>
-Developer: YAKINAKI
-</p>
+<div class="card">
 
-<p>
-Contact: YAKINE.BOUHANTALA@ETU.UNIV-BATNA2.DZ 
-</p>
+<p><strong>Game Title:</strong> VClass</p>
+<p><strong>Genre:</strong> Multiplayer Social Game</p>
+<p><strong>Publisher:</strong> Yakine Bouhantala</p>
+<p><strong>Developer:</strong> Yakine Bouhantala</p>
+<p><strong>Platform:</strong> PC</p>
+<p><strong>Contact:</strong> yakine.bouhantala@etu.univ-batna2.dz</p>
+
+</div>
+
 </section>
 
 <section class="section">
+
 <h2>Legal</h2>
 
 <p>
-<a href="privacy-policy.html">
+<a href="privecy-policy.html">
 Privacy Policy
 </a>
 </p>
+
 </section>
 
 <footer class="footer">
-<p>
-© 2026 VClass. All rights reserved.
-</p>
+
+<p>© 2026 VClass</p>
+
 </footer>
 
 </body>
