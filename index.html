@@ -1,114 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VClass</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #0f172a;
-      color: #e2e8f0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VClass - Virtual Classroom Multiplayer Experience</title>
 
-    header {
-      background: #1e293b;
-      padding: 40px;
-      text-align: center;
-    }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 40px;
-    }
+body{
+    background:#050816;
+    color:white;
+    line-height:1.6;
+}
 
-    header p {
-      margin-top: 10px;
-      color: #94a3b8;
-    }
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    background:
+    radial-gradient(circle at top,#0d2b65,#050816 70%);
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px;
-    }
+.logo{
+    font-size:5rem;
+    font-weight:bold;
+    letter-spacing:4px;
+}
 
-    h2 {
-      color: #60a5fa;
-    }
+.tagline{
+    max-width:700px;
+    margin-top:20px;
+    font-size:1.2rem;
+    color:#b7c5ff;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
+.button{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#3b82f6;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
 
-    a {
-      color: #38bdf8;
-    }
+.section{
+    max-width:1100px;
+    margin:auto;
+    padding:80px 20px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #64748b;
-    }
-  </style>
+.section h2{
+    margin-bottom:20px;
+    color:#7aa2ff;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#0f172a;
+    padding:25px;
+    border-radius:12px;
+}
+
+.footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid #222;
+}
+
+a{
+    color:#7aa2ff;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>VClass</h1>
-    <p>A social multiplayer virtual classroom experience</p>
-  </header>
+<section class="hero">
+<h1 class="logo">VCLASS</h1>
 
-  <div class="container">
+<p class="tagline">
+A multiplayer virtual classroom experience where players gather,
+chat, socialize, and participate in shared online activities
+inside a digital classroom environment.
+</p>
 
-    <div class="card">
-      <h2>About the Game</h2>
-      <p>
-        VClass is designed to provide an interactive virtual classroom where players can meet,
-        chat, and engage with others in real time.
-      </p>
-    </div>
+<a class="button" href="#about">Learn More</a>
+</section>
 
-    <div class="card">
-      <h2>Features</h2>
-      <ul>
-        <li>Multiplayer classroom environments</li>
-        <li>Real-time communication between players</li>
-        <li>Social interaction and collaboration</li>
-        <li>Community-driven experiences</li>
-      </ul>
-    </div>
+<section class="section" id="about">
+<h2>About VClass</h2>
 
-    <div class="card">
-      <h2>Publisher</h2>
-      <p>VClass</p>
-    </div>
+<p>
+VClass is a social multiplayer application that allows users to
+join virtual classrooms and communicate with one another in real time.
+The application is designed to create collaborative online spaces
+for communication, interaction, and community engagement.
+</p>
+</section>
 
-    <div class="card">
-      <h2>Contact</h2>
-      <p>Email: yakine.bouhantala@etu.univ-batna2.dz</p>
-    </div>
+<section class="section">
+<h2>Features</h2>
 
-    <div class="card">
-      <h2>Legal</h2>
-      <p>
-        Privacy Policy:
-        <a href="https://vclass.me/privecy-policy.html" target="_blank">
-          View Policy
-        </a>
-      </p>
-    </div>
+<div class="card-grid">
 
-  </div>
+<div class="card">
+<h3>Multiplayer Spaces</h3>
+<p>
+Join shared virtual classroom environments with other users.
+</p>
+</div>
 
-  <footer>
-    © 2026 VClass. All rights reserved.
-  </footer>
+<div class="card">
+<h3>Real-Time Chat</h3>
+<p>
+Communicate with participants through integrated messaging features.
+</p>
+</div>
+
+<div class="card">
+<h3>Social Interaction</h3>
+<p>
+Meet new users and participate in collaborative activities.
+</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Publisher Information</h2>
+
+<p>
+Publisher: VClass
+</p>
+
+<p>
+Developer: YOUR NAME
+</p>
+
+<p>
+Contact: YOUR_EMAIL@example.com
+</p>
+</section>
+
+<section class="section">
+<h2>Legal</h2>
+
+<p>
+<a href="privacy-policy.html">
+Privacy Policy
+</a>
+</p>
+</section>
+
+<footer class="footer">
+<p>
+© 2026 VClass. All rights reserved.
+</p>
+</footer>
 
 </body>
 </html>
